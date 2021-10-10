@@ -1,6 +1,11 @@
 module.exports = {
 	devServer: {
-		overlay: false
+		overlay: false,
+		proxy: {
+			'/api': {
+				target: 'https://openapi.naver.com'
+			}
+		}
 	},
 	css: {
 		loaderOptions: {

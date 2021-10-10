@@ -1,7 +1,6 @@
 <template>
-	<p>send</p>
-	<div class="btn btn-primary">Hi</div>
-	<i class="bi bi-arrow-left-square"></i>
+	sssss
+	<RouterView />
 </template>
 
 <script>
