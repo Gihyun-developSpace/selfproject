@@ -1,27 +1,15 @@
 <template>
-	<div>hi</div>
+	<div>
+		<Search />
+	</div>
 </template>
 
 <script>
-import axios from 'axios'
+import Search from '@/components/Search'
 
 export default {
-	methods: {
-		async home() {
-			const res = await axios.get('/api/v1/search/movie.json', {
-				params: { query: `page`, display: 20 },
-				headers: {
-					'X-Naver-Client-Id': '5wLUPTsBYSuIfYEsNQ04',
-					'X-Naver-Client-Secret': 'y6D0b3Is0a'
-				}
-			})
-
-			console.log(res)
-		}
-	},
-
-	created() {
-		this.home()
+	components: {
+		Search
 	}
 }
 </script>
